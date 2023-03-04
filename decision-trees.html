@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Decision Trees Model</title>
+  </head>
+  <body>
+    <header>
+      <h1>Decision Trees Model</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="linear-regression.html">Linear Regression</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Introduction</h2>
+        <p>The decision trees model is a supervised learning algorithm that is commonly used for classification and regression tasks. It is a non-parametric model, which means that it does not make any assumptions about the underlying distribution of the data.</p>
+      </section>
+      <section>
+        <h2>Algorithm</h2>
+        <p>The decision trees algorithm works by recursively partitioning the data into subsets based on the values of the predictor variables, with the goal of minimizing the variance of the outcome variable within each subset. The partitions are represented as nodes in a tree structure, with the predictor variables used to make the splits represented as branches. At each node, the algorithm selects the predictor variable that provides the best split (i.e., the one that results in the largest reduction in variance).</p>
+      </section>
+      <section>
+        <h2>Advantages</h2>
+        <ul>
+          <li>Decision trees are easy to understand and interpret.</li>
+          <li>They can handle both continuous and categorical predictor variables.</li>
+          <li>They can handle non-linear relationships between the predictor variables and the outcome variable.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Limitations</h2>
+        <ul>
+          <li>Decision trees can be prone to overfitting, especially when the tree is deep or when the data is noisy.</li>
+          <li>They can be sensitive to small changes in the data.</li>
+          <li>They can be biased towards variables with more levels or more variance.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Applications</h2>
+        <ul>
+          <li>Classifying images based on their content.</li>
+          <li>Predicting whether a customer will churn based on their demographic and usage data.</li>
+          <li>Detecting fraudulent transactions based on transaction data and user behavior.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Implementation</h2>
+        <p>To implement the decision trees model in Python, you can use the scikit-learn library. Here's some example code:</p>
+        <pre>
+from sklearn.tree import DecisionTreeClassifier
+
+# Create a decision tree classifier object
+model = DecisionTreeClassifier()
+
+# Fit the model to the data
+X = [[0, 0], [1, 1]]
+y = [0, 1]
+model.fit(X, y)
+
+# Make a prediction
+print(model.predict([[2., 2.]]))  # Output: [1]
+        </pre>
+      </section>
+      <section>
+        <h2>Back</h2>
+        <p><a href="index.html">Back to Home</a></p>
+      </section>
+    </main>
+  </body>
+</html>

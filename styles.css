@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+  }
+  
+  .model {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 1em;
+    padding: 1em;
+    max-width: 400px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  .button {
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #444;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  /* Page layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.details {
+  max-width: 600px;
+}
+
+.sidebar {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-basis: 30%;
+  margin-right: 1em;
+  padding: 1em;
+}
+
+/* Header styling */
+h1 {
+  margin-top: 0;
+}
+
+/* Section header styling */
+h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  margin-top: 1em;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 0.5em;
+}
+
+th {
+  background-color: #f7f7f7;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Back button styling */
+.back-button {
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #444;
+}
+
+/* Code block styling */
+code {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+  font-family: monospace;
+  margin-top: 1em;
+  padding: 1em;
+  white-space: pre-wrap;
+}

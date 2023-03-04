@@ -103,6 +103,9 @@
       .navigation a:hover {
         background-color: #ccc;
       }
+      iframe[seamless] {
+        border: none;
+      }
     </style>
   </head>
   <body>
@@ -117,66 +120,157 @@
         </ul>
       </div>
       <div class="model-info">
-        
-          <h2>K-Nearest Neighbors (KNN)</h2>
-          <h3>Supervised Learning Algorithm | Classification, Regression</h3>
-          <ul>
-          <li><h4>Introduction</h4>
+        <h2>K-Nearest Neighbors (KNN)</h2>
+        <h3>Supervised Learning Algorithm | Classification, Regression</h3>
+        <ul>
+          <li>
+            <h4>Introduction</h4>
             <ul>
-              <li>K-Nearest Neighbors (KNN) is a popular machine learning algorithm that is used for classification and regression problems.</li>
-              <li>It is a non-parametric method that does not make any assumptions about the underlying data distribution, making it useful for a wide variety of applications.</li>
+              <li>
+                K-Nearest Neighbors (KNN) is a popular machine learning
+                algorithm that is used for classification and regression
+                problems.
+              </li>
+              <li>
+                It is a non-parametric method that does not make any assumptions
+                about the underlying data distribution, making it useful for a
+                wide variety of applications.
+              </li>
             </ul>
           </li>
-          <li><h4>How it Works</h4>
+          <li>
+            <h4>How it Works</h4>
             <ul>
-              <li>KNN works by finding the K closest data points to a given input data point, based on a distance metric such as Euclidean distance.</li>
-              <li>The predicted output for the input data point is then determined by the majority class or average value of the K nearest neighbors.</li>
-              <li>In the case of regression, the predicted output is the average of the K nearest neighbors' output values.</li>
+              <li>
+                KNN works by finding the K closest data points to a given input
+                data point, based on a distance metric such as Euclidean
+                distance.
+              </li>
+              <li>
+                The predicted output for the input data point is then determined
+                by the majority class or average value of the K nearest
+                neighbors.
+              </li>
+              <li>
+                In the case of regression, the predicted output is the average
+                of the K nearest neighbors' output values.
+              </li>
             </ul>
           </li>
-          <li><h4>Applications</h4>
+          <li>
+            <h4>Applications</h4>
             <ul>
-              <li>KNN can be applied to a variety of fields, including computer vision, natural language processing, and bioinformatics.</li>
-              <li>It is commonly used for image classification, where the features of an image are used to determine its classification.</li>
-              <li>KNN is also used for text classification, where the frequency of words in a document is used to determine its classification.</li>
-              <li>In bioinformatics, KNN can be used to classify genes based on their expression patterns.</li>
+              <li>
+                KNN can be applied to a variety of fields, including computer
+                vision, natural language processing, and bioinformatics.
+              </li>
+              <li>
+                It is commonly used for image classification, where the features
+                of an image are used to determine its classification.
+              </li>
+              <li>
+                KNN is also used for text classification, where the frequency of
+                words in a document is used to determine its classification.
+              </li>
+              <li>
+                In bioinformatics, KNN can be used to classify genes based on
+                their expression patterns.
+              </li>
             </ul>
           </li>
-          <li><h4>Strengths</h4>
+          <li>
+            <h4>Strengths</h4>
             <ul>
-              <li>KNN has several strengths that make it a useful algorithm:</li>
-              <li>It is simple to implement, making it a good choice for prototyping and quick experiments.</li>
-              <li>It works well with both small and large datasets and can be used for both classification and regression problems.</li>
-              <li>It is a lazy learning algorithm, meaning that it does not require any training and can be updated with new data points at any time.</li>
+              <li>
+                KNN has several strengths that make it a useful algorithm:
+              </li>
+              <li>
+                It is simple to implement, making it a good choice for
+                prototyping and quick experiments.
+              </li>
+              <li>
+                It works well with both small and large datasets and can be used
+                for both classification and regression problems.
+              </li>
+              <li>
+                It is a lazy learning algorithm, meaning that it does not
+                require any training and can be updated with new data points at
+                any time.
+              </li>
             </ul>
           </li>
-          <li><h4>Weaknesses</h4>
+          <li>
+            <h4>Weaknesses</h4>
             <ul>
               <li>KNN also has some weaknesses:</li>
-              <li>It can be computationally expensive, especially for large datasets.</li>
-              <li>It is sensitive to the choice of distance metric, which can have a significant impact on the performance of the algorithm.</li>
-              <li>The algorithm is not well-suited for high-dimensional data, where the "curse of dimensionality" can lead to inaccurate results.</li>
+              <li>
+                It can be computationally expensive, especially for large
+                datasets.
+              </li>
+              <li>
+                It is sensitive to the choice of distance metric, which can have
+                a significant impact on the performance of the algorithm.
+              </li>
+              <li>
+                The algorithm is not well-suited for high-dimensional data,
+                where the "curse of dimensionality" can lead to inaccurate
+                results.
+              </li>
             </ul>
           </li>
-          <li><h4>Restrictions</h4>
+          <li>
+            <h4>Restrictions</h4>
             <ul>
-              <li>KNN also has some restrictions that should be taken into account when using the algorithm:</li>
-              <li>It assumes that all features are equally important, which may not always be the case.</li>
-              <li>It assumes that the data points are independent, which may not be true in some cases.</li>
-              <li>KNN can be sensitive to the scale of the data, so it is often necessary to normalize the features before applying the algorithm.</li>
+              <li>
+                KNN also has some restrictions that should be taken into account
+                when using the algorithm:
+              </li>
+              <li>
+                It assumes that all features are equally important, which may
+                not always be the case.
+              </li>
+              <li>
+                It assumes that the data points are independent, which may not
+                be true in some cases.
+              </li>
+              <li>
+                KNN can be sensitive to the scale of the data, so it is often
+                necessary to normalize the features before applying the
+                algorithm.
+              </li>
             </ul>
           </li>
-          <li><h4>Conclusion</h4>
+          <li>
+            <h4>Conclusion</h4>
             <ul>
-              <li>KNN is a simple and versatile machine learning algorithm that can be used for both classification and regression problems.</li>
-              <li>It is a non-parametric algorithm that does not make any assumptions about the underlying data distribution, making it useful for a wide variety of applications.</li>
-              <li>It is a lazy learning algorithm, meaning that it does not require any training and can be updated with new data points at any time.</li>
-              <li>However, it can be computationally expensive for large datasets and is sensitive to the choice of distance metric.</li>
+              <li>
+                KNN is a simple and versatile machine learning algorithm that
+                can be used for both classification and regression problems.
+              </li>
+              <li>
+                It is a non-parametric algorithm that does not make any
+                assumptions about the underlying data distribution, making it
+                useful for a wide variety of applications.
+              </li>
+              <li>
+                It is a lazy learning algorithm, meaning that it does not
+                require any training and can be updated with new data points at
+                any time.
+              </li>
+              <li>
+                However, it can be computationally expensive for large datasets
+                and is sensitive to the choice of distance metric.
+              </li>
             </ul>
           </li>
-          </ul>
-          <iframe src="https://nbviewer.jupyter.org/github/Sami-ul/Data-Science-Website/blob/master/notebooks/K-Nearest%20Neighbors%20Application%20-%20Sami-ul%20Ahmed.ipynb" width="100%" height="600px"></iframe>
-
+        </ul>
+        <h3>Application</h3>
+        <iframe
+          src="notebooks\K-Nearest Neighbors Application - Sami-ul Ahmed.html"
+          seamless
+          style="width: 100%; height: 100%"
+          scrolling="auto"
+        ></iframe>
       </div>
     </div>
   </body>

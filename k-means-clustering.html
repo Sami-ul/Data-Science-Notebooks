@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>K-Nearest Neighbors</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Header styles */
+      header {
+        background-color: #333;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      header h1 {
+        margin: 0;
+      }
+
+      /* Container styles */
+      .container {
+        display: flex;
+        align-items: stretch;
+        min-height: 100vh;
+      }
+
+      /* Model info styles */
+      .model-info {
+        flex: 1;
+        padding: 1rem;
+      }
+
+      .model-info h2 {
+        font-size: 2rem;
+        margin-top: 0;
+      }
+
+      .model-info p {
+        padding-right: 1rem;
+        text-align: justify;
+      }
+
+      .model-info a {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: white;
+        background-color: #333;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .model-info a:hover {
+        background-color: #555;
+      }
+
+      /* Navigation styles */
+      .navigation {
+        background-color: #f1f1f1;
+        width: 25%;
+        padding: 1rem;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100vh;
+      }
+
+      .navigation h3 {
+        font-size: 1.5rem;
+        margin-top: 0;
+      }
+
+      .navigation ul {
+        margin-top: 1rem;
+        list-style: none;
+        padding: 0;
+      }
+
+      .navigation li {
+        margin: 0.5rem 0;
+      }
+
+      .navigation a {
+        display: block;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: #333;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .navigation a:hover {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>K-Nearest Neighbors</h1>
+    </header>
+    <div class="container">
+      <div class="navigation">
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </div>
+      <div class="model-info">
+        
+        <h2>K-Means Clustering</h2>
+        <h3>Unsupervised Learning Algorithm | Clustering</h3>
+        <ul>
+        <li><h4>Introduction</h4>
+          <ul>
+            <li>K-Means Clustering is a popular machine learning algorithm that is used for clustering problems.</li>
+            <li>It is an unsupervised learning method that attempts to group similar data points into clusters.</li>
+          </ul>
+        </li>
+        <li><h4>How it Works</h4>
+          <ul>
+            <li>K-Means works by first selecting K random points in the dataset, known as centroids.</li>
+            <li>Each data point is then assigned to the nearest centroid based on a distance metric such as Euclidean distance.</li>
+            <li>The centroid is then updated by taking the mean of all the data points assigned to it.</li>
+            <li>This process is repeated until the centroids no longer move or a maximum number of iterations is reached.</li>
+            <li>The resulting clusters are the groups of data points that are closest to each centroid.</li>
+          </ul>
+        </li>
+        <li><h4>Applications</h4>
+          <ul>
+            <li>K-Means can be applied to a variety of fields, including image segmentation, market segmentation, and anomaly detection.</li>
+            <li>It is commonly used in image segmentation to group similar pixels together, which can be useful for object recognition and background removal.</li>
+            <li>In market segmentation, K-Means can be used to group customers based on their purchasing habits.</li>
+            <li>It can also be used for anomaly detection to identify unusual behavior in network traffic or financial transactions.</li>
+          </ul>
+        </li>
+        <li><h4>Strengths</h4>
+          <ul>
+            <li>K-Means has several strengths that make it a useful algorithm:</li>
+            <li>It is simple to implement and computationally efficient, making it a good choice for large datasets.</li>
+            <li>It is a fast algorithm that can quickly group data points into clusters.</li>
+            <li>It does not require any training data or prior knowledge of the data distribution.</li>
+          </ul>
+        </li>
+        <li><h4>Weaknesses</h4>
+          <ul>
+            <li>K-Means also has some weaknesses:</li>
+            <li>It is sensitive to the choice of K, which can have a significant impact on the quality of the resulting clusters.</li>
+            <li>The algorithm is not well-suited for datasets with unevenly sized clusters or non-globular shapes.</li>
+            <li>It can be sensitive to the scale of the data, so it is often necessary to normalize the features before applying the algorithm.</li>
+          </ul>
+        </li>
+        <li><h4>Restrictions</h4>
+          <ul>
+            <li>K-Means also has some restrictions that should be taken into account when using the algorithm:</li>
+            <li>It assumes that the clusters are spherical and have the same variance, which may not always be the case.</li>
+            <li>It assumes that the clusters have roughly the same number of data points, which may not be true in some cases.</li>
+            <li>The algorithm can get stuck in local optima, so it is often necessary to run the algorithm multiple times with different initial centroids.</li>
+          </ul>
+        </li>
+        <li><h4>Conclusion</h4>
+            <ul>
+                <li>K-Means is a popular unsupervised learning algorithm that can be used for clustering problems.</li>
+                <li>It is a fast and efficient algorithm that can be used to group similar data points into clusters.</li>
+                <li>It is a simple algorithm that does not require any training data or prior knowledge of the data distribution.</li>
+                <li>However, it is sensitive to the choice of K and can get stuck in local optima, so it is often necessary to run the algorithm multiple times with different initial centroids.</li>
+            </ul>
+        </li>
+        </ul>
+        <iframe src="https://nbviewer.jupyter.org/github/Sami-ul/Data-Science-Website/blob/master/notebooks/K-Means%20Clustering%20Application%20-%20Sami-ul%20Ahmed.ipynb" width="100%" height="600px"></iframe>
+
+      </div>
+    </div>
+  </body>
+</html>
